@@ -44,7 +44,7 @@ var player = new Tone.Player("./sounds/clap.wav").toMaster();
 
 // TriggerSound Play
 function triggerSound(time){
-	player.start()
+	player.start(time)
 }
 
 // Schedule sound using Tone.js Transport Feature
