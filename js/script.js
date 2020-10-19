@@ -68,15 +68,14 @@ Tone.Transport.loopEnd = '4n';
 //start/stop the transport
 document.querySelector('tone-play-toggle').addEventListener('change', e => Tone.Transport.toggle())
 
-// //start/stop the transport
-// document.querySelector('tone-play-toggle').addEventListener('change', function (e){
-//   Tone.Transport.toggle()
-//   running = !running;
-// });
-
 //start/stop the transport
 document.querySelector('tone-slider').addEventListener('change', e => Tone.Transport.bpm.value = e.detail)
 
+
+function changeTempo (val) {
+  
+    Tone.Transport.bpm.value = val;
+}
 
 // Calculate seconds per beat from BPM
 function updateTime() {

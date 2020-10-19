@@ -9,6 +9,10 @@
     <h1>The Clapping Metronome</h1>
     <tone-slider label="bpm" min="60" max="240" exp="2" value="60"></tone-slider>
   <tone-play-toggle class='toggle'></tone-play-toggle>
+  <button class="tempoButton" value="80" onclick="changeTempo(this.value)">Slow</button>
+  <button class="tempoButton" value="100" onclick="changeTempo(this.value)">Medium</button>
+  <button class="tempoButton" value="140" onclick="changeTempo(this.value)">Fast</button>
+  <button class="tempoButton" value="200" onclick="changeTempo(this.value)">Ludicrous Speed</button>
 
   <br>
 
