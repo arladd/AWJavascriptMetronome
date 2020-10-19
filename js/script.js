@@ -21,7 +21,7 @@ class Ball {
   }
 
   display(){
-    stroke(0,0,0);
+    noStroke();
     fill('rgb(241, 194, 125)');
     ellipse(this.x,100,this.radius,this.radius);
     ellipse(this.x+30*this.direction,55,this.radius/2.5,this.radius/8);
